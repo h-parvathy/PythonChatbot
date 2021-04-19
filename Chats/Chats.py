@@ -20,7 +20,6 @@ class Log:
         values = {"$set": cases_dict}
         records = dbConn.cases_records
         records.update_one(query, values)
-        # records.insert_one(cases_dict)
 
     def get_cases(self, search, botmessage, dbConn):
         records = dbConn.cases_records
